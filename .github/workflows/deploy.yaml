@@ -4,11 +4,11 @@ on:
    push:
      branches: [main]
    pull_request:
-    branches: [main]       # lint + test on PRs, but no deploy
+     branches: [main]       # lint + test on PRs, but no deploy
 
 env:
   AWS_REGION: us-east-1                         # change to your region
-  ECR_REPOSITORY: xebia/my-node-app            # change to your ECR repo name
+  ECR_REPOSITORY: xebia/node-app            # change to your ECR repo name
   ECS_CLUSTER: victorious-flamingo-cub5ae           # change to your ECS cluster name
   ECS_SERVICE: my-node-app-demo-d067           # change to your ECS service name
   ECS_TASK_DEFINITION: victorious-flamingo-cub5ae-my-node-app-demo-d067
