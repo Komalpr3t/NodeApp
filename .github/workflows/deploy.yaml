@@ -1,9 +1,9 @@
 name: CI/CD — Lint, Test, Build & Deploy to ECS
 
 on:
-  # push:
-  #   branches: [main]
-  pull_request:
+   push:
+     branches: [main]
+   pull_request:
     branches: [main]       # lint + test on PRs, but no deploy
 
 env:
